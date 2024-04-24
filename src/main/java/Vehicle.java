@@ -37,8 +37,6 @@ public class Vehicle {
         this.yearOfManufacture = yearOfManufacture;
     }
 
-    @Override           //???if no this annotation, also works???
-
 //-----error
 /*    @Override
     public String toString(Vehicle vehicle){
@@ -48,6 +46,7 @@ public class Vehicle {
                 "Year of manufacture: " + vehicle.yearOfManufacture;
     }  */
 
+    @Override           //???if no this annotation, also works???
     public String toString(){
         return "This Vehicle is: " + '\'' +
                 "Manufacturer: " + manufacturer+ '\'' +

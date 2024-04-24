@@ -1,7 +1,15 @@
 public class Car extends Vehicle {
     private int numberOfDoors;     //if there's also a kids-class of Car, here 'protected' instedad of 'private'
 
-    public Car(int numberOfDoors) {
+    //error
+/*    public Car(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }*/
+
+    //???? easiest way: write all parameters(also from parentClass in Car)???
+    //GPT: Car Constructor that correctly calls the superclass constructor----
+    public Car(String manufacturer, String model, int yearOfManufacture, int numberOfDoors) {
+        super(manufacturer, model, yearOfManufacture);
         this.numberOfDoors = numberOfDoors;
     }
 
