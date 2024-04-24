@@ -38,11 +38,21 @@ public class Vehicle {
     }
 
     @Override           //???if no this annotation, also works???
+
+//-----error
+/*    @Override
     public String toString(Vehicle vehicle){
-        return "This Vehicle is: " + '\'' +
+       return "This Vehicle is: " + '\'' +
                 "Manufacturer: " + vehicle.manufacturer+ '\'' +
                 "Model: " + vehicle.model + '\'' +
                 "Year of manufacture: " + vehicle.yearOfManufacture;
+    }  */
+
+    public String toString(){
+        return "This Vehicle is: " + '\'' +
+                "Manufacturer: " + manufacturer+ '\'' +
+                "Model: " + model + '\'' +
+                "Year of manufacture: " + yearOfManufacture;
     }
 
 }

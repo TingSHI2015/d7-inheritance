@@ -15,17 +15,21 @@ public class Car extends Vehicle {
     }
 
 
-    @Override
+/*    @Override
     public String toString(Car car) {       //if write 'Vehicle car' in (), another meaning
         return "This Car is: " + '\'' +
                 "Manufacturer: " + car.manufacturer + '\'' +
                 "Model: " + car.model + '\'' +
                 "Year of manufacture: " + car.yearOfManufacture + '\'' +
                 "Number of doors:" + getNumberOfDoors();
+    }*/
+
+    public String toString() {
+        return "This Car is: " + '\'' +
+                "Manufacturer: " + manufacturer + '\'' +
+                "Model: " + model + '\'' +
+                "Year of manufacture: " + yearOfManufacture + '\'' +
+                "Number of doors:" + getNumberOfDoors();
     }
-
-
-
-
 
 }
